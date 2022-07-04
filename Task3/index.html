@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><u>Student Enrollment Form</u></h1>
+    <left>
+		<table border="0" class="entry">
+                <div class="row">
+                <div class="columnleft">
+                <tr>
+					<th>First Name</th>
+					<td><input type="text" name="fname" id="fname" placeholder="Enter first name" required></td>
+				</tr><br>
+                <tr>
+					<th>Last Name</th>
+					<td><input type="text" name="lname" id="lname" placeholder="Enter last name" required></td>
+				</tr>
+				<tr>
+					<th>Email Id</th>
+					<td><input type="email" name="email" id="email"
+						placeholder="Enter email" required></td>
+				</tr>
+				<tr>
+					<th>College</th>
+					<td><input type="text" name="college" id="college"
+						placeholder="Enter college name" required></td>
+				</tr>
+                <tr>
+					<th>Gender</th>
+                    <td>
+					
+                    <input type="radio" id="male" name="gender"  value="Male" style="margin-left:-68px";>&ensp;Male<br>
+					
+                    &nbsp;<input type="radio" id="female" name="gender" value="Female"  style="margin-left:-57px";>&ensp;Female <br>
+					&nbsp;<input type="radio" id="Prefer not to say" name="gender" value="Prefer not to say">&ensp;Prefer not to say
+                    </td>
+                </tr>
+                <tr>
+					<th>Date of Birth</th>
+					<td><input type="date" id="birthday" name="birthday" style="padding:2px 28px"; placeholder="Enter DOB" required></td>
+				</tr>
+                <tr>
+					<th>Phone Number</th>
+					<td><input type="number" name="phno" id="phno"  max="10" placeholder="Enter phone number" required></td>
+				</tr>
+               <tr>
+					<th>Address</th>
+					<td><input type="text" id="address" name="address" placeholder="Enter address" required></td>
+				</tr>
+				<tr id="btn">
+					<td colspan="2"><input type="button" name="button" id="btn" value="Enroll" onclick="AddRow()"></td>
+				</tr>
+               </div> 
+		</table>
+   </left>
+            <div class="line"></div>
+   <right>
+            <div class="columnright">
+            <table border="1" id="show" class="display">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email Id</th>
+					<th>College</th>
+                    <th>Gender</th>
+                    <th>Date of Birth</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+				</tr>
+			</thead>
+           </table>
+           </div>
+	</right>
+    </div>	
+    <div>
+        <script src="script.js"></script>
+   </div>
+</body>
+</html>
